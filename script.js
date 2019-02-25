@@ -50,13 +50,28 @@ myEdit[0].addEventListener("click",changeColor)
 
 //////exo04
 
-
-myEdit = document.getElementsByClassName("btn-outline-secondary");
-
-  function changeColor(){
+  function changeColorTwo(){
   cardTxt = document.getElementsByClassName("card-text");
-  cardTxt[0].style.color="red"
+  if(cardTxt[1].style.color==="green") {
+  cardTxt[1].style.color="";
+  }
+  else{
+  cardTxt[1].style.color="green";
+  }
+}
+myEdit[1].addEventListener("click",changeColorTwo);
+
+///////exo5
+
+  function nuclear(){
+    boot = document.getElementsByTagName("link");
+    if(boot[0].href==="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"){
+        boot[0].href="";
+    }
+    else {
+        boot[0].href==="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    }
 
 }
 
-myEdit[0].addEventListener("click",changeColor)
+myHeader[0].addEventListener("dblclick",nuclear);
