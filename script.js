@@ -63,15 +63,14 @@ myEdit[1].addEventListener("click",changeColorTwo);
 
 ///////exo5
 
-  function nuclear(){
-    boot = document.getElementsByTagName("link");
-    if(boot[0].href==="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"){
-        boot[0].href="";
-    }
-    else {
-        boot[0].href==="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    }
+function nuclear() {
+
+let navbarClick = document.querySelector("header");
+
+  navbarClick.addEventListener("dblclick", function(){
+    document.querySelector("link").disabled == true ? document.querySelector("link").disabled = false : document.querySelector("link").disabled = true ;
+    });
 
 }
 
-myHeader[0].addEventListener("dblclick",nuclear);
+nuclear()
