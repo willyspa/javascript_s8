@@ -29,13 +29,7 @@ let hamburger = function() {
 myButton[0].addEventListener("click",hamburger);
 
 //////exo3
-var button = document.getElementsByClassName('btn btn-sm btn-outline-secondary'); // element
 
-button[0].addEventListener("click", function() {
-    var text = document.getElementsByClassName("card-text");
-    text[0].style.color = "#ff0000";
-
-});
 
 myEdit = document.getElementsByClassName("btn-outline-secondary");
 
